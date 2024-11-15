@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate Limiter Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rate Limiter Demonstration</h1>
+        
+        <div class="button-group">
+            <button id="sendRequest">Single Request</button>
+            <button id="loadTest">Load Test</button>
+            <button id="raceTest">Race Condition Test</button>
+        </div>
+
+        <div class="info-panel">
+            <div id="rateLimitInfo">
+                <h3>Rate Limit Information</h3>
+                <p><strong>Remaining Tokens:</strong> <span id="remaining">N/A</span></p>
+                <p><strong>Bucket Size:</strong> <span id="limit">N/A</span></p>
+                <p><strong>Retry After:</strong> <span id="retryAfter">N/A</span></p>
+            </div>
+
+            <div id="responsePanel">
+                <h3>Response Log</h3>
+                <pre id="response"></pre>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
